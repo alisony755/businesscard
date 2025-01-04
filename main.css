@@ -1,0 +1,102 @@
+/* General page styling */
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    color: #ffffff;
+    font-family: 'M PLUS 1 Code', monospace;
+    overflow: hidden;
+}
+
+/* CLI container */
+#cli {
+    max-width: 600px;
+    width: 50vw; 
+    height: 60vh;
+    max-height: 400px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Output display styling */
+#cli-output {
+    flex: 1;
+    overflow-y: auto;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+/* Input styling */
+#cli-input {
+    background-color: #242323;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: monospace;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Placeholder color for input */
+#cli-input::placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+/* Loading and response messages */
+.loading-line {
+    color: #00ff00;
+}
+
+.error-message {
+    color: #ff0000;
+}
+
+.command-response {
+    margin-top: 5px;
+    padding-bottom: 10px;
+    line-height: 2.5;
+}
+
+/* Start button */
+#start-button {
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #00eaff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #cli {
+        width: 95vw;
+        height: 70vh;
+    }
+    #cli-input {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    /* Adjust ASCII art for smaller screens */
+    .ascii-art {
+        white-space: pre-wrap; /* Allow text to wrap */
+    }
+}
