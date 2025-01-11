@@ -16,13 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const commands = {
-        help: '> Available commands: help, hi, about, major, skills, languages, linkedin, contact, bye\n',
+        help: '> Available commands: help, hi, about, major, skills, languages, awards, interests, linkedin, contact, bye\n',
         hi: greeting,
         about: '> I am an Honors Computer Science student at Northeastern University. Two years of college coursework has equipped me with a solid foundation in object-oriented design and proficiency in  Java, JavaScript, Racket, and advanced topics in Machine Learning. I\'ve also independently developed projects in HTML and CSS.\n',
         major: '> I am majoring in computer science with a concentration in AI.\n',
         skills: '> Java, SQL, JavaScript, Python, HTML & CSS, UX, Graphic Design, Team Collaboration\n',
         languages: '>  (Proficient) Java, HTML, CSS, JavaScript, Racket | (Familiar with) Python, SQL, C++\n',
         awards: '> John Martinson Honors Student, Northeastern National Merit Scholar, Dean\'s List (2022-2023), Bausch + Lomb Honorary Science Award, AP Scholar with Distinction\n',
+      interests: '> Web design, UI design, Accessibility-focused design, Environmental conservation, Wildlife conservation\n',
         linkedin: '> <a target="_blank" href="https://www.linkedin.com/in/alison-ye-00b5581b3/">Click here for my LinkedIn</a>\n',
         contact: '> You can contact me via email at <a href="mailto:ye.ali@northeastern.edu">ye.ali@northeastern.edu</a>\n',
         bye: '> Bye! Hope I\'ll see you again soon.\n',
